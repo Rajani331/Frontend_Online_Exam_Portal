@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import React from "react"
+import Header from "./Components/Header"
+import Footer from "./Components/Footer"
+function App(){
+		return (
+      
+			<main className="App">
+			<h1>Admin Login</h1>
+      <div className="ui divider"></div>
+        <div className="ui form"></div>
+        <div className="field"></div>
+        <label>Username</label>
+        <input type="text" name="username" placeholder="username">
+        </input>
+        <div className="field"></div>
+        <label>Password</label>
+        <input type="password" name="password" placeholder="password">
+        </input>
+          <button className="fluid ui button">login</button>
+        
+			</main>
+		);
+	}
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
 export default App;
